@@ -1,0 +1,16 @@
+project-catalog-api:
+  image: project-catalog-api
+  ports:
+    - "5000:5000"  
+  links:
+    - project-catalog-db
+project-catalog-db:
+  image: project-catalog-db
+  ports: 
+    - "27017:27017"
+project-catalog-frontend:
+  image: project-catalog-frontend
+  ports:
+    - "80:80"
+  links:
+    - project-catalog-api
