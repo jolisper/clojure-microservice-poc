@@ -1,0 +1,51 @@
+{
+	"id": "70072870-1ef2-831c-068b-f5cc67746f77",
+	"name": "project-catalog",
+	"description": "",
+	"order": [
+		"2bc1bc3e-e2ad-e81f-75ae-64a01d205f6f",
+		"e12d5567-1a35-d845-d2db-b799f3c06f02"
+	],
+	"folders": [],
+	"timestamp": 1447213990506,
+	"owner": "158430",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "2bc1bc3e-e2ad-e81f-75ae-64a01d205f6f",
+			"url": "localhost/projects",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nX-Catalog-Token: o brave new world\n",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"preRequestScript": "",
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"version": 2,
+			"name": "localhost/projects",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "70072870-1ef2-831c-068b-f5cc67746f77"
+		},
+		{
+			"id": "e12d5567-1a35-d845-d2db-b799f3c06f02",
+			"url": "localhost/projects",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-Catalog-Token: o brave new world\n",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"preRequestScript": "",
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"version": 2,
+			"name": "localhost/projects",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "70072870-1ef2-831c-068b-f5cc67746f77",
+			"rawModeData": "{\n    \"project-name\": \"Posted project\",\n    \"description\": \"Is only the beginning\"\n}"
+		}
+	]
+}
