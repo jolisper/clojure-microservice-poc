@@ -4,10 +4,12 @@
             [monger.json]
             [metis.core :as metis :refer [defvalidator]]))
 
+(defn get-db-uri []
+  (or (System/getenv "MONGO_CONNECTION")
+            "mongodb://project-catalog-db/project-catalog"))
+
 (def db
-  (:db (mg/connect-via-uri
-        (or (System/getenv "MONGO_CONNECTION")
-            "mongodb://project-catalog-db/project-catalog"))))
+  (:db (mg/connect-via-uri (get-db-uri))))
 
 (def valid-project-keys
   [:project-name :name :framework :language])
